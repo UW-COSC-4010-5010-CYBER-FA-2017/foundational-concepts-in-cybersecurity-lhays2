@@ -91,6 +91,16 @@ int main(){
     if (credentials != -1){
        cout << "Access valid." << endl; 
        cout << "****************************************" << endl;
+       cout << "You have the avalible options to you" << endl;
+       cout << "'view' to see the amount" << endl;
+       if(x <= 1){
+           cout << "'add' to add some money" << endl;  
+       }
+       if(x <= 0){
+           cout << "'drain' remove all money" << endl;  
+       }
+       cout << "or 'exit' to quit" << endl;
+       cout << "****************************************" << endl;
      }                                                
      else{
        cout << "Invalid credentials."<< endl;
