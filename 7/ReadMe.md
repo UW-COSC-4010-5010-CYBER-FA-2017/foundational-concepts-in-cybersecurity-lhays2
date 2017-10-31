@@ -16,15 +16,27 @@ a user can 'view' and add money with 'add'
 and an admin do 'view', 'add' and 'drain' to drain the account.
 all users also have the option to exit the system using 'exit'.
 
-
-
-The bad version of this has no credential checking. on the functions. if the user is able to beat the first layer of security then they have full access to the system as seen below.
+The good version of this program outputs the different commands that a user has. as the above code illistrates a person will only see the commands for the options their credentials allow.
 ```
-int drain_money(int x, int y){
-   int val = 0, pin = -1;
-   cout << "Acount has been drained" << endl;
-   return val;
+if (credentials != -1){
+       cout << "Access valid." << endl; 
+       cout << "****************************************" << endl;
+       cout << "You have the avalible options to you" << endl;
+       cout << "'view' to see the amount" << endl;
+       if(credentials <= 1){
+           cout << "'add' to add some money" << endl;  
+       }
+       if(credentials <= 0){
+           cout << "'drain' remove all money" << endl;  
+       }
+       cout << "or 'exit' to quit" << endl;
+       cout << "****************************************" << endl;
+     }
+```
 
-}
+
+The bad version of this has no output for the person loging in and simply allows them to guess
+```
+
 ```
 
