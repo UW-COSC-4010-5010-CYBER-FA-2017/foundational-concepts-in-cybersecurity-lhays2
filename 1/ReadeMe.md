@@ -11,12 +11,12 @@ the simple object of the program is to take an input txt file, with each line ha
  
 `14 Edwardo -6` an example of an age that probably shouldn't exist. 
 
-Thanks to this test data we are able to program those scenarios into the program.
-    ```
-    infile >> age;
-    if(infile.fail()){
-         infile.clear();
-         cerr <<"Not a real number for age" << endl;
+Thanks to this test data we are able to program those scenarios into the program
+```
+infile >> age;
+if(infile.fail()){
+     infile.clear();
+      cerr <<"Not a real number for age" << endl;
          infile.ignore(256,'\n');        
       }
       else if (age > 150 || age <= 0){// check to see if the user input a reasonable age
@@ -25,4 +25,5 @@ Thanks to this test data we are able to program those scenarios into the program
       else{
       outfile <<"Employee name: "<< name << ", ";    
       outfile <<"age "<< age <<'\n';
-      }```
+      }
+      ```
