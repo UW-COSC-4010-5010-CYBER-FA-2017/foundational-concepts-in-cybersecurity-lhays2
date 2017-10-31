@@ -37,6 +37,9 @@ if (credentials != -1){
 
 The bad version of this has no output for the person loging in and simply allows them to guess
 ```
-
+if (credentials != -1){// check for valid credentials
+       cout << "Access valid." << endl; 
+       cout << "****************************************" << endl;
+} 
 ```
 
