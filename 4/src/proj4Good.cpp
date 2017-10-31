@@ -1,4 +1,4 @@
-// Main.cpp
+// proj4Good.cpp
 #include <iostream>
 using std::cout;
 using std::cin;
