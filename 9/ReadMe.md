@@ -80,4 +80,4 @@ int x,y,z; // math variables
   return 0;
 }
 ```
-the problem with this code is that while the main program is simpler in comparision the header files means that we had to write three new headerfiles and c++ files.
+the problem with this code is that while the main program is simpler in comparision the header files means that we had to write three new headerfiles and three c++ files. this is an unessecary addition for this project. It adds two numbers, it does not need 4 c++ files and 3 header files to accomplish this feat. The bad program is doing to much work for such a simple program.
