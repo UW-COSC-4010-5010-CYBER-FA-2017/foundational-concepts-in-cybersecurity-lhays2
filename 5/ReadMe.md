@@ -84,4 +84,4 @@ while (!walk_away){
     }
  ```
 
-A modular program allows for scalability. with the good version we could implement several machines with little effort simply making a few function calls but with this version we would need to replicate much of the same code to get more machines.
+A modular program allows for scalability. with the good version we could implement several machines with little effort simply making a few function calls but with this version we would need to replicate much of the same code to get more machines. The problem only compounds as it gets bigger as well.
