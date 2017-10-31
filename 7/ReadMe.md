@@ -37,7 +37,7 @@ if (credentials != -1){
 ```
 
 
-The bad version of this has no output for the person loging in and simply allows them to guess
+The bad version of this has no output for the person loging in and simply allows them to guess as to what option are avalible to them. while this is not an overload of information this is definitly not the minimum amount of information nessecaary to call the functions
 ```
 if (credentials != -1){// check for valid credentials
        cout << "Access valid." << endl; 
