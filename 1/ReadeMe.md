@@ -13,17 +13,16 @@ the simple object of the program is to take an input txt file, with each line ha
 
 Thanks to this test data we are able to program those scenarios into the program.
 
-`     infile >> age;
-    if(infile.fail()){
-         infile.clear();
-         cerr <<"Not a real number for age" << endl;
-         infile.ignore(256,'\n');         
-      }
-      else if (age > 150 || age <= 0){// check to see if the user input a reasonable age
-         cout << "Invalid age user not added" << endl;
-      }
-      else{
-
-      outfile <<"Employee name: "<< name << ", ";    
-      outfile <<"age "<< age <<'\n';
+`   infile >> age;`
+    `if(infile.fail()){`
+         `infile.clear();`
+         `cerr <<"Not a real number for age" << endl;`
+         `infile.ignore(256,'\n');`         
+      `}`
+      `else if (age > 150 || age <= 0){// check to see if the user input a reasonable age`
+         `cout << "Invalid age user not added" << endl;`
+      `}`
+      `else{`
+      `outfile <<"Employee name: "<< name << ", ";`    
+      `outfile <<"age "<< age <<'\n';`
       }`
