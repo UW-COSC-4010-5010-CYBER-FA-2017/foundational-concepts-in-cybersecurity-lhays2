@@ -1,9 +1,9 @@
 
 // Data Hiding
 
-Modularity means breaking like code into sperate files or functions.
+Data hiding means hiding the varibles or data from the user or programer if there is no reason for them to access them.
 
-For this example I used the idea of a gumball machine again, since it seemed to fit. the header of the gumball machine below shows the seperation of the machine from the main program. becuase of this we can make changes to the code or aven make new machines with minimal effort.
+For this example I used the idea of a gumball machine once again. the header below shows that there are several private varibles. If we assume that a porogramer only has access to the main program and not the gumball_machine files, then have a very small section of data hiding. 
 ```
 // gumball header
 #include <iostream>
@@ -25,7 +25,7 @@ class gumball_machine{
       void fill_machine();     // fill the machine
 };
 ```
-and the simple main program.
+The main program can only use the functions to interact with the hidden varibles. They do not have the option of directly affecting them.
 ```
   while (!walk_away){
     cout << "what do you want to do:"; 
@@ -48,7 +48,7 @@ and the simple main program.
 ```
 
 
-The bad version of this program has all of the functions implemented in the main program  this makes updating the code or seperating it rather difficult, as seen below.
+The bad version of this program has all of the variables and data out in the open for the programmer to interact with and edit as they choose.
 ```
 while (!walk_away){
     cout << "what do you want to do:"; 
@@ -82,5 +82,4 @@ while (!walk_away){
     cout << "That doesn't make sense" << endl; // the user did not input a valid command
     }
  ```
-
-A modular program allows for scalability. with the good version we could implement several machines with little effort simply making a few function calls but with this version we would need to replicate much of the same code to get more machines. The problem only compounds as it gets bigger as well.
+ 
