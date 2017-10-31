@@ -16,7 +16,9 @@ a user can 'view' and add money with 'add'
 and an admin do 'view', 'add' and 'drain' to drain the account.
 all users also have the option to exit the system using 'exit'.
 
-The good version of this program outputs the different commands that a user has. as the above code illistrates a person will only see the commands for the options their credentials allow.
+One of the ideas of abstraction is giving users the information or tools they need and only the ones they need to complete the task. this version of this program illistrates this with instructions telling the user what they can do. 
+
+The good version of this program outputs the different commands that a user has. As the below code illistrates a person will only see the commands for the options their credentials allow.
 ```
 if (credentials != -1){
        cout << "Access valid." << endl; 
