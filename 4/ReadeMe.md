@@ -1,8 +1,12 @@
 // Least Privilege
 to run this program some information is necessary.
+
 Username:     admin   user    guest
+
 Password:     admin   user    guest
+
 Pin number:   0       1       2
+
 The pin number is the same as the level of the persons credentials. 0 being full access, and 2 being the least access.
 
 using this information a user has certain levels of access to different functions.
